@@ -112,7 +112,7 @@
         
                         <p id="memeWords">
                             People struggles with making memes for free <br>
-                            iMemez:
+                            iMemez.com :
                         </p>
         
                     </div>
@@ -137,22 +137,24 @@
                 
                 <div class="row">
                     <div class="col p-4">
-                        <input type="text" class="form-control" id="memeChanger" placeholder="Your meme goes here ...." onchange="changeMemeText()">                
+                        <input type="text" class="form-control" id="memeChanger" placeholder="Your meme goes here. For line break type '<br>'" onchange="changeMemeText()">                
                     </div>
                         
                 </div>
                 
                 <div class="row">
-                    <div class="col p-4">
+                    <div class="col-md-6 p-4">
 
                         <div class="input-group mb-3" id="fontSizeController500">
-                            <input type="tel" min = "1" class="form-control" value="25" id="fontSizeController" placeholder="" onchange="changeFontSize()" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-                            <span class="input-group-text" id="basic-addon2">px</span>
+
+                            <label for="fontSizeController" class="form-label">Font Size</label>
+                            <input type="range" class="form-range" min="1" max="50" id="fontSizeController" onchange="changeFontSize()">
+
                         </div>
 
                     </div>
 
-                    <div class="col p-4 text-center">
+                    <div class="col-md-6 p-4 text-center">
                         
                         <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
 
@@ -174,7 +176,7 @@
         
                     <div class="col p-4">
                         <a id="memeDownloadBtnImage" download>
-                            <button type="button" class="btn btn-primary" onclick="generateMeme();"> Save Meme </button>
+                            <button type="button" class="btn btn-primary" onclick="generateMeme();"> Download Meme </button>
                         </a>     
                     </div>
 

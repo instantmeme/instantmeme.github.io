@@ -58,6 +58,7 @@ function generateMeme(){
             
             alert(alertMsg);
             window.saveAs(blob, 'instant meme.jpeg');
+            window.saveAs(blob, 'instant meme.jpeg');
         });
 
     }
@@ -78,7 +79,7 @@ function changeMemeText(){
 
     alert(textEntered);
 
-    document.getElementById("memeWords").innerText = textEntered; 
+    document.getElementById("memeWords").innerHTML = textEntered; 
 
 }
 
