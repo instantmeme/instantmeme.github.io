@@ -57,8 +57,8 @@ function generateMeme(){
         .then(function (blob) {
             
             alert(alertMsg);
-            window.saveAs(blob, 'instant meme.jpeg');
-            window.saveAs(blob, 'instant meme.jpeg');
+            window.saveAs(blob, 'first meme.jpeg');
+            window.saveAs(blob, 'second meme.jpeg');
         });
 
     }
