@@ -54,12 +54,27 @@ function generateMeme(){
             transform: 'scale('+scale+')',
             transformOrigin: 'top left'
         }})
-        .then(function (blob) {
+        .then(function () {
             
-            alert(alertMsg);
-            window.saveAs(blob, 'first meme.jpeg');
-            window.saveAs(blob, 'second meme.jpeg');
+            domtoimage.toBlob(document.getElementById('theUserMeme'), {
+                width: domNode.clientWidth * scale,
+                height: domNode.clientHeight * scale,
+                style: {
+                transform: 'scale('+scale+')',
+                transformOrigin: 'top left'
+            }}).then(function(blob){
+
+                // await sleep(2000);
+                alert(alertMsg);
+                window.saveAs(blob, 'meme.jpeg');
+            })
+
+            
+
+            
         });
+
+        
 
     }
     else{
