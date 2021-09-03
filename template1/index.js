@@ -31,11 +31,6 @@ function generateMeme(){
 
     var checkBox = document.getElementById("TandCs");
 
-    var alertMsg = "*********** Please Read *********** \n";
-    alertMsg += "Image must be saved in your device \n";
-    alertMsg += "If you didn't get the image that you want try again, otherwise, feel free to get in touch with us \n";
-    alertMsg += "*********** Thanks for reading ***********";
-
     var options = {
         quality: 1,
     };
@@ -64,8 +59,6 @@ function generateMeme(){
                 transformOrigin: 'top left'
             }}).then(function(blob){
 
-                // await sleep(2000);
-                alert(alertMsg);
                 window.saveAs(blob, 'meme.jpeg');
             })
 
@@ -91,8 +84,6 @@ function generateMeme(){
 function changeMemeText(){
 
     var textEntered = document.getElementById("memeChanger").value;
-
-    alert(textEntered);
 
     document.getElementById("memeWords").innerHTML = textEntered; 
 
