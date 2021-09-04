@@ -3,10 +3,6 @@ function readUrl() {
     var url = document.getElementById("memeUploader").value;
     
     alert("Image dropped");
-    // alert(url);
-
-    // document.getElementById('memeImage').src = url;
-
 
     var input = document.getElementById("memeUploader");
     console.log(input);
@@ -23,7 +19,7 @@ function readUrl() {
 
 }
 
-// (Not done yet)
+// (DONE)
 function generateMeme(){
     
     const scale = 2;
@@ -40,8 +36,6 @@ function generateMeme(){
 
         // alert("Sounds good checkbox is working well");
 
-
-        
         domtoimage.toBlob(document.getElementById('theUserMeme'), {
             width: domNode.clientWidth * scale,
             height: domNode.clientHeight * scale,
