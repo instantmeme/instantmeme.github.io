@@ -78,7 +78,7 @@ function generateMeme(){
 function changeMemeText(){
 
     var textEntered = document.getElementById("memeChanger").value;
-
+    textEntered = textEntered.replace(/\r?\n/g, '<br/>');
     document.getElementById("memeWords").innerHTML = textEntered; 
 
 }
