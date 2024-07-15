@@ -42,7 +42,7 @@ function sendQ(){
     
         };
     
-        emailjs.send("service_f8h746w", "template_sfjszwa", tempParam)
+        emailjs.send("service_kxnilyb", "template_sfjszwa", tempParam)
         .then(function(res){
             
             console.log("succes", res.status);
